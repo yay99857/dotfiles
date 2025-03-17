@@ -302,7 +302,7 @@ install_aur_dependencies() {
     }
 
     # AUR Package List
-    local aur_apps=(xqp xwinwrap-0.9-bin ttf-maple noto-fonts ani-cli google-chrome discord)
+    local aur_apps=(xqp xwinwrap-0.9-bin ttf-maple noto-fonts ani-cli google-chrome discord bun)
 
     echo -e "${BLD}${CBL}Checking for required AUR packages...${CNC}\n"
     sleep 2
