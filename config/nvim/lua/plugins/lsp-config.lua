@@ -10,7 +10,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         event = { "BufReadPre", "BufNewFile" },
         opts = {
-            ensure_installed = { "bashls", "lua_ls", "cssls" },
+            ensure_installed = { "bashls", "lua_ls", "cssls", "ts_ls" },
             auto_install = true,
         },
     },
@@ -22,6 +22,9 @@ return {
 
             local lspconfig = require("lspconfig")
             lspconfig.bashls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.ts_ls.setup({
                 capabilities = capabilities,
             })
             lspconfig.cssls.setup({
