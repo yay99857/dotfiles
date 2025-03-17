@@ -136,6 +136,8 @@ fi
 alias mirrors="sudo reflector --verbose --latest 5 --country 'United States' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
 alias update="paru -Syu --nocombinedupgrade"
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias anime="ani-cli"
+alias lg="lazygit"
 
 alias music="ncmpcpp"
 
