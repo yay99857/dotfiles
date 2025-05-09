@@ -117,6 +117,7 @@ source /usr/share/zsh/plugins/fzf-tab-git/fzf-tab.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-z/zsh-z.plugin.zsh
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
@@ -154,6 +155,7 @@ alias music="ncmpcpp"
 alias cat="bat --theme=base16"
 alias ls='eza --icons=always --color=always -a'
 alias ll='eza --icons=always --color=always -la'
+alias ide='~/.local/bin/tmux-dev.sh'
 
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
 #  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │
