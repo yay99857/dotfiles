@@ -10,12 +10,10 @@ return {
         config = function()
             local lspconfig = require("lspconfig")
             local capabilities = require('blink.cmp').get_lsp_capabilities()
-
-            require("mason").setup({})
-
+require("mason").setup({})
             require("mason-lspconfig").setup({
                 -- Lua, C/C++, Python, JavaScript, Java, Html, Css, SQL
-                ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls", "jdtls", "html", "cssls", "sqlls" },
+                ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls", "jdtls", "html", "cssls", "sqlls", "gopls" },
                 automatic_installation = true,
 
                 handlers = {
@@ -47,6 +45,12 @@ return {
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = "Show Hover Documentation" })              -- Shift k
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = "Go To Definition" })                -- g d
             vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = "Trigger Code Action" })    -- Space c a
+            vim.keymap.set(
+                "n",
+                "<leader>fe",
+                vim.diagnostic.open_float,
+                { desc = "Show File Diagnostics (Errors/Warnings)" }
+            ) -- Space f e (Show error)
         end
     },
 

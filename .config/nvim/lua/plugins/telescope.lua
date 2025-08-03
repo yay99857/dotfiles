@@ -31,6 +31,11 @@ return {
             local builtin = require("telescope.builtin")
             vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "Find Files" })  -- Space f f
             vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Live Grep" })    -- Space f g
+            vim.keymap.set('n', '<leader>fd', function()
+                builtin.diagnostics({
+                    scope = "workspace",
+                }) -- Space fd (See the errors)
+            end, { desc = "Find All Diagnostics in Workspace" }) -- Space f d
         end
     }
 }
