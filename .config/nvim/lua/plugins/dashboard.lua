@@ -66,7 +66,7 @@ return {
                 },
                 footer = {
                     "",
-                    " Have a great time with Viet-Nvim!!!",
+                    "  Let's code!",
                 },
             }
         })
