@@ -1,6 +1,6 @@
 return {
     "catgoose/nvim-colorizer.lua",
-    config = function ()
+    config = function()
         require('colorizer').setup({
             filetypes = { "*" },
             user_default_options = {

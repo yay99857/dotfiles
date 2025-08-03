@@ -15,7 +15,7 @@ return {
             telescope.setup({
                 extensions = {
                     ["ui-select"] = {
-                        require("telescope.themes").get_dropdown ({})
+                        require("telescope.themes").get_dropdown({})
                     },
                     fzf = {
                         fuzzy = true,                    -- false will only do exact matching
@@ -34,7 +34,7 @@ return {
             vim.keymap.set('n', '<leader>fd', function()
                 builtin.diagnostics({
                     scope = "workspace",
-                }) -- Space fd (See the errors)
+                })
             end, { desc = "Find All Diagnostics in Workspace" }) -- Space f d
         end
     }

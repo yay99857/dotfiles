@@ -1,6 +1,6 @@
 return {
     "MeanderingProgrammer/render-markdown.nvim",
-    config = function ()
+    config = function()
         require('render-markdown').setup({})
     end
 }
