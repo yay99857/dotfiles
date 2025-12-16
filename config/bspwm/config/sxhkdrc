@@ -39,8 +39,8 @@ super + {y,v,m}
     OpenApps --{yazi,nvim,music}
 
 # Media apps (Pavucontrol, Telegram, Whatsapp)
-super + {p,t,w}
-    OpenApps --{soundcontrol,telegram,whats}
+super + {p,t}
+    OpenApps --{soundcontrol,telegram}
 
 # Rice Editor App
 super + r
@@ -139,7 +139,7 @@ super + alt + r
     bspc wm -r
 
 # Close/Kill node
-super + {_,shift + }x
+super + {_,shift + }w
     bspc node -{c,k}
 
 # Reload sxhkd Keybinds
@@ -153,8 +153,7 @@ alt + {t,shift + t,a,f}
     bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # Set the node flags
-alt + {m,x,s,p}
-    bspc node -g {marked,locked,sticky,private}
+alt + {m,x,s,p} bspc node -g {marked,locked,sticky,private}
 
 # Hide window
 alt + h
